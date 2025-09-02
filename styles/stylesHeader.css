@@ -1,0 +1,29 @@
+header{
+    background-color: var(--Primary-Color);
+    position: fixed;
+    width: 100%;
+    padding: 35px;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.listHeader{
+    display: flex;
+    gap: 35px;
+    list-style: none;
+}
+.linkItem{
+    color: var(--Links-Color);
+}
+.linkItem:hover{
+    color: var(--linkHover-Color);
+}
+.titleHeader{
+    color: var(--Text-Header-Color);
+}

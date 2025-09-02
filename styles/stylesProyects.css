@@ -1,0 +1,32 @@
+#titleProyect{
+    padding: 80px;
+    background: linear-gradient(
+        0deg,
+        var(--Secondary-Color)0%,
+        var(--Terciary-Color)50%,
+        var(--Secondary-Color)80%
+    );
+}
+.sectionProyects{
+    display: flex;
+    justify-content:  space-around;
+    background-color: var(--Secondary-Color);
+    padding-bottom: 250px;
+    gap: 20px;
+}
+.titlesProyects{
+    color: var(--Text-Header-Color);
+    background-color: var(--Primary-Color);
+    font-size: x-large;
+    padding: 20px;
+    border-radius: 20px;
+}
+.proyectSection{
+    background-color: var(--Terciary-Color);
+    padding: 20px 20px 80px 20px; 
+    border-radius: 20px;
+    border: 2px solid var(--Primary-Color);
+}
+.textProyect{
+    padding-top: 20px;
+}

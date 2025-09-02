@@ -1,0 +1,56 @@
+.skills{
+    background-color: var(--Secondary-Color);
+    padding-bottom: 50px;
+}
+.skillsSections{
+    display: flex;
+    justify-content: center;
+    gap: 75PX;
+}
+#titleSkills{
+    padding: 20px;
+}
+.titlesSkills{
+    color: var(--Text-Header-Color);
+    font-size: x-large;
+    background-size: auto;
+    background-color: var(--Primary-Color);
+    padding: 20px;
+    white-space: nowrap;
+    border-radius: 200px;
+    margin-bottom: 30px;
+}
+.sectionSkill{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 20px;
+    background-color: var(--Terciary-Color);
+    border: 2px solid var(--Primary-Color);
+}
+.codeSkills{
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 20px;
+}
+.codeSkills .skill p{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.codeSkills .skill .progress{
+    position: relative;
+    width: 100%;
+    height: 6px;
+    background: #999;
+    border-radius: 6px;
+    overflow: hidden;
+    margin: 5px 0;
+}
+.codeSkills .skill .progress::before{
+    content: '';
+    position: absolute;
+    width: var(--wth);
+    height: 100%;
+    background: blue;
+}

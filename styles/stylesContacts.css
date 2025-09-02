@@ -1,0 +1,39 @@
+.formContacts{
+    display: flex;
+    justify-content: center;
+}
+.fieldContacts{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    background-color: var(--Terciary-Color);
+    width: 450px;
+    height: 450px;
+    gap: 20px;
+    border: 2px solid var(--Primary-Color);
+    border-radius: 20px;
+}
+.legendContacts{
+    color: var(--Text-Header-Color);
+    padding: 10px;
+    border-radius: 20px;
+    background-color: var(--Primary-Color);
+}
+.containerText{
+    display: flex;
+}
+label{
+    display: flex;
+    justify-content: space-between;
+}
+.textLabel{
+    color: var(--Text-Header-Color);
+    background-color: var(--Primary-Color);
+    margin-right: 20px;
+    padding: 10px;
+    border-radius: 20px;
+}

@@ -1,0 +1,12 @@
+main{
+    background-color: var(--Background-Color);
+    padding: 80px 0;
+}
+.titleSection{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+

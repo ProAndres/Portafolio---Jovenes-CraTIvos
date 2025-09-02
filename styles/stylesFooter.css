@@ -1,0 +1,7 @@
+footer{
+    display: flex;
+    justify-content: center;
+    color: var(--Text-Header-Color);
+    background-color: var(--Primary-Color);
+    padding: 50px;
+}

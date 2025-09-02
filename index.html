@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <header class="header" id="header">
+        <nav class="contentHeader">
+            <h1 class="titleHeader">Portafolio - Jovenes CreaTIvos</h1>
+            <ul class="listHeader">
+                <a href="" class="linkItem"><li class="itemList">Acerca de Mi</li></a>
+                <a href="" class="linkItem"><li class="itemList">Habilidades</li></a>
+                <a href="" class="linkItem"><li class="itemList">Proyectos</li></a>
+                <a href="" class="linkItem"><li class="itemList">Contacto</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main" id="main">
+    <!--SOBRE MI-->
+    <section class="aboutMy">
+            <div class="sectionAboutMy">
+                <h2 class="titleSection" id="titleAboutMy">Acerca de Mi</h2>
+                    <button id="toggleButton" class="buttonStyles">
+                    <span class="textBtn"><i class="bi bi-chevron-double-right"></i></span>
+                    </button>
+            </div> 
+            <div id="sectionToRight" class="hideSection" >
+                <img src="./assets/perfil.png" alt="Imagen de mi rostro" class="myPhoto">
+                <p class="textAboutMy">Bachiller tecnico en redes y telecomunicaciones, con conocimiento en C++, C#, CSS, HTML, Java Script y circuitos electricos.<br>
+                Actualemten estudiando un curso de Desarrollo de Software y pregrado en Ingenieria de Sistemas. </p>
+            </div>
+        </section>
+        <!--HABILIDADES-->
+    <section class="skills">
+        <h2 class="titleSection" id="titleSkills">Mis Habilidades</h2>
+
+        <div class="skillsSections">  
+            <!--DESARROLLO WEB SKILL-->
+                <div class="sectionSkill">
+                        <h3 class="titlesSkills">Desarrollo web<button>Flecha</button></h3>
+                    <div class="codeSkills">
+                        <div class="skill">
+                            <p><span>Java Script</span>50%</p>
+                            <div class="progress" style="--wth: 50%"></div>
+                        </div>
+                        <div class="skill">
+                            <p><span>Css</span>70%</p>
+                            <div class="progress" style="--wth: 70%"></div>
+                        </div>
+                        <div class="skill">
+                            <p><span>Html</span>80%</p>
+                            <div class="progress" style="--wth: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            <!--DESARROLLO DE VIDEOJUEGOS SKILL-->
+                <div class="sectionSkill">
+                        <h3 class="titlesSkills">Desarrollo de Videojuegos<button>Flecha</button></h3>
+                    <div class="codeSkills">
+                        <div class="skill">
+                            <p><span>C# en Unity</span>40%</p>
+                            <div class="progress" style="--wth: 40%"></div>
+                        </div>
+                    </div>
+                </div>
+            <!--PROGRAMACION SKILL-->
+                <div class="sectionSkill">
+                        <h3 class="titlesSkills">Programación<button>Flecha</button></h3>
+                    <div class="codeSkills">
+                        <div class="skill">
+                            <p><span>C++</span>70%</p>
+                            <div class="progress" style="--wth: 70%"></div>
+                        </div>
+                        <div class="skill">
+                            <p><span><C id=""></C></span>40%</p>
+                            <div class="progress" style="--wth: 40%"></div>
+                        </div>
+                    </div>
+                </div>
+        </div>
+    </section>
+        <!--PROYECTOS-->
+        <section class="proyects">
+                <h2 class="titleSection" id="titleProyect">Mis Proyectos</h2>
+            <div class="sectionProyects">
+                <div class="proyectSection">
+                    <h3 class="titlesProyects">Portafolio - Jovenes CreaTIvos</h3>
+                    <div class="textProyect"><p>Realice un Portafolio virtual usando HTML, CSS y Java Script.<br>
+                    Lo realice en el curso Jovenes CreaTIvos, lo cual me enseñaron sobre desarrollo web.</p></div>
+                </div>
+                <div class="proyectSection">
+                    <h3 class="titlesProyects">Prototipo en Unity</h3>
+                    <div class="textProyect"><p>Hice un pequeño prototipo en Unity, el cual era sobre un juegador que saltaba plataformas.<br>
+                    Lo realice con intenciones de aplicar lo aprendido en un curso que ando haciendo. </p></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contacts">
+            <h2 class="titleSection" id="titleContacts">Contacto</h2>
+            <div class="formContacts">
+                <form action="">
+                    <fieldset class="fieldContacts">
+                        <legend class="legendContacts">Ingrese sus Datos</legend>
+                        <div class="containerText">
+                            <label class="textLabel">Nombres</label>
+                            <input type="text" placeholder="Ingrese sus Nombres...">
+                        </div>
+                        <div class="containerText">
+                            <label class="textLabel">Apellidos</label>
+                            <input type="text" placeholder="Ingrese sus Apellidos...">
+                        </div>
+                        <div class="containerText">
+                            <label class="textLabel">Telefono</label>
+                            <input type="number" placeholder="Numero Telefonico..." >
+                        </div>
+                        <div class="containerText">
+                            <label class="textLabel">Razon de Contacto</label>
+                            <textarea name="" id="reasonContact" placeholder="Ingrese su razon de contacto..."></textarea>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer class="footer" id="footer">
+        <p class="copyright" id="copyright">© 2025 Portafolio de Andrés Navarrete</p>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script href="./js/main.js"></script>
+</body>
+</html>
