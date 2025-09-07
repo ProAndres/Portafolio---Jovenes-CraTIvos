@@ -67,21 +67,6 @@
     width: 200px;
     height: 300px;
 }
-@media screen and (max-width: 995px){
-.sectionAboutMy{
-    margin-right: -240px;
-}
-#titleAboutMy{
-    display: none;
-}
-.sketchfab-embed-wrapper{
-    display: none;
-}
-.aboutSection{
-    gap: 30px;
-    width: 100%;
-}
-}
 @media screen and (max-width: 1360px){
     .aboutMy{
         align-items: normal;
@@ -101,4 +86,19 @@
     #titleAboutMy{
         margin-top: 120px;
     }
+}
+@media screen and (max-width: 995px){
+.sectionAboutMy{
+    margin-right: -240px;
+}
+#titleAboutMy{
+    display: none;
+}
+.sketchfab-embed-wrapper{
+    display: none;
+}
+.aboutSection{
+    gap: 30px;
+    width: 100%;
+}
 }
