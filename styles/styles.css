@@ -8,15 +8,14 @@
 
 :root{
     /* Colors */
-    --Background-Color: #FFFFFF;
-    --Primary-Color: #222222;
-    --Secondary-Color: #1C5D99;
-    --Terciary-Color: #bbcde5;
-    --Quaternary-Color: red;
-    --Quinary-Color: red;
-    --Links-Color: rgb(255, 255, 255);
-    --linkHover-Color: rgb(0, 247, 255);
-    --Text-Color: rgb(0, 0, 0);
+    --Background-Color: #d1c9c9;
+    --Primary-Color: #313638;
+    --Secondary-Color: #000000;
+    --Terciary-Color: #063ca0;
+    --Quaternary-Color: #2f3b5c;
+    --Quinary-Color: #001a55;
+    --Links-Color: #d1c9c9;
+    --linkHover-Color: rgb(255, 255, 255);
     --Text-Header-Color: white;
 
     /* Text Type */
@@ -33,6 +32,4 @@ body{
     font-weight: weight;
     font-style: normal;
 }
-a{
-    text-decoration: none;
-}
+

@@ -2,28 +2,124 @@ header{
     background-color: var(--Primary-Color);
     position: fixed;
     width: 100%;
-    padding: 35px;
+    padding: 35px 0px 35px 35px;
     top: 0;
-    z-index: 1000;
+    z-index: 5;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
-nav{
+.contentHeader{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: relative;
+    margin-right: 2rem;
 }
 .listHeader{
     display: flex;
     gap: 35px;
     list-style: none;
 }
-.linkItem{
+.linkHeader{
     color: var(--Links-Color);
 }
-.linkItem:hover{
+.linkHeader:hover{
     color: var(--linkHover-Color);
 }
 .titleHeader{
     color: var(--Text-Header-Color);
+}
+a{
+    text-decoration: none;
+}
+nav a {
+    position: relative;
+}
+nav a::after {
+    content: "";
+    background-color: var(--linkHover-Color);
+    height: 2px;
+    width: 0;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transition: 0.7s;
+}
+nav a:hover::after {
+    width: 100%;
+}
+.closeMenu{
+    display: none;
+}
+.openMenu{
+    display: none;
+}
+@media screen and (max-width: 995px){
+    .openMenu{
+        color: var(--Background-Color);
+        position: absolute;
+        display: block;
+        right: 20px;
+        border: 0;
+        font-size: 2rem;
+        background-color: transparent;
+        cursor: pointer;
+    }
+    .closeMenu{
+        color: var(--Background-Color);
+        display: block;
+        position: absolute;
+        border: 0;
+        font-size: 2rem;
+        background-color: transparent;
+        cursor: pointer;
+        margin-left: 167px;
+        margin-top: 30px;
+    }
+    .openMenu:hover{
+        font-size: 2.2rem;
+    }
+    .closeMenu:hover{
+        font-size: 2.2rem;
+    }
+    .navInvisible{
+        display: flex;
+        justify-content: center;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        background-color: var(--Primary-Color);
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 220px;
+        transition: right 0.3s;
+    }
+    .navVisible{
+        opacity: 1;
+        visibility: visible;
+    } 
+    .listHeader{
+        display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        gap: 50px;
+        width: 220px;
+    }
+    nav a::after {
+    display: none;
+    }
+    nav a:hover::after {
+    display: none;
+    }
+    .itemList{
+        display: flex;
+        justify-content: center;
+        width: 240px;
+        padding: 20px 20px;
+    }
+    .itemList:hover{
+        color: var(--linkHover-Color);
+        background-color: rgba(240, 248, 255, 0.473);
+        cursor: pointer;
+    }
 }

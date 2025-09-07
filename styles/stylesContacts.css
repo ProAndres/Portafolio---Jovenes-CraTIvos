@@ -1,39 +1,79 @@
+.contacts{
+    scroll-margin-top: 80px;
+}
+#titleContacts{
+    display: flex;
+    align-items: center;
+    font-size: 80px;
+    font-weight: 500;
+    white-space: nowrap;
+    color: #fff;
+    text-shadow:
+        3px 3px 20px #000,
+        3px -3px 0 #000;
+    padding: 90px;
+}
 .formContacts{
     display: flex;
     justify-content: center;
+    height: 650px;
+    padding: 60px;
+    border-top: 4px solid var(--Primary-Color);
+    border-bottom: 4px solid var(--Primary-Color);
+    background: linear-gradient(
+      to left, 
+      rgba(0, 0, 0, 0.5),  
+      rgba(0, 0, 0, 0) 30%  
+    ),
+    linear-gradient(
+      to right, 
+      rgba(0, 0, 0, 0.5),
+      rgba(34, 26, 26, 0) 20%
+    );
+    background-color: var(--Primary-Color)
 }
 .fieldContacts{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    box-sizing: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    padding: 20px;
-    background-color: var(--Terciary-Color);
-    width: 450px;
-    height: 450px;
-    gap: 20px;
-    border: 2px solid var(--Primary-Color);
-    border-radius: 20px;
-}
-.legendContacts{
-    color: var(--Text-Header-Color);
-    padding: 10px;
-    border-radius: 20px;
-    background-color: var(--Primary-Color);
+    padding: 120px 40px 80px 40px;
+    gap: 40px;
+    border: 0;
+    
 }
 .containerText{
     display: flex;
-}
-label{
-    display: flex;
     justify-content: space-between;
+    gap: 40px;
+}
+input{
+    border-radius: 5px;
+    width: 300px;
+}
+textarea{
+    padding: 3px;
+    border-radius: 5px;
+    min-width: 300px;
+    min-height: 100px;
+    max-width: 300px;
+    max-height: 100px;
 }
 .textLabel{
     color: var(--Text-Header-Color);
     background-color: var(--Primary-Color);
     margin-right: 20px;
     padding: 10px;
+    border-radius: 5px;
+}
+#btnSend{
+    padding: 20px;
     border-radius: 20px;
+    background-color: var(--Background-Color);
+}
+#btnSend:hover{
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+    transform: translateY(-5px);
+    background-color: var(--linkHover-Color);
+    cursor: pointer;
 }
