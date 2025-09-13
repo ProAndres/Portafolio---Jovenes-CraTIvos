@@ -60,11 +60,7 @@
     font-weight: 500;
 }
 .myPhoto{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
-    width: 200px;
+    width: 250px;
     height: 300px;
 }
 @media screen and (max-width: 1360px){
